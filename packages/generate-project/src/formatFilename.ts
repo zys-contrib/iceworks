@@ -11,11 +11,14 @@ export default function formatFilename(filename: string) {
     '_eslintignore',
     '_stylelintrc.js',
     '_stylelintrc.cjs',
+    '_stylelintrc.mjs',
     '_stylelintrc',
     '_stylelintignore',
     '_editorconfig',
     '_prettierrc.js',
     '_prettierignore',
+    '_prettierrc.mjs',
+    '_prettierrc.mts',
   ];
   if (dotFilenames.indexOf(filename) !== -1) {
     // _eslintrc.js -> .eslintrc.js

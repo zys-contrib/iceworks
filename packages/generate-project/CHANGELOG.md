@@ -1,5 +1,10 @@
 # `@iceworks/generate-project`
 
+## 2.0.5
+
+- [fix] support custom files in package.json when generating project
+- [fix] support new files generating of dot filenames
+
 ## 2.0.4
 
 - [fix] do not remove publishConfig in package.json

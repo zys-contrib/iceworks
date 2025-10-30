@@ -14,7 +14,12 @@ export default async function formatPkgJson(projectDir: string) {
 }
 
 function deleteFields(pkgJsonContent: Record<string, any>) {
-  delete pkgJsonContent.files;
+  if (pkgJsonContent.npmFiles) {
+    pkgJsonContent.files = pkgJsonContent.npmFiles;
+  } else {
+    delete pkgJsonContent.files;
+  }
+  delete pkgJsonContent.npmFiles;
 
   return pkgJsonContent;
 }
